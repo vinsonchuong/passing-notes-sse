@@ -1,0 +1,38 @@
+{
+  "name": "passing-notes-sse",
+  "version": "0.0.0",
+  "description": "An awesome package",
+  "keywords": [],
+  "homepage": "https://github.com/vinsonchuong/passing-notes-sse",
+  "bugs": "https://github.com/vinsonchuong/passing-notes-sse/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "repository": "vinsonchuong/passing-notes-sse",
+  "scripts": {
+    "test": "xo && ava",
+    "release": "semantic-release"
+  },
+  "type": "module",
+  "ava": {
+    "verbose": true
+  },
+  "xo": {
+    "prettier": true,
+    "space": 2,
+    "semicolon": false,
+    "rules": {
+      "import/no-anonymous-default-export": "off"
+    }
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "packageManager": "yarn@4.0.0",
+  "devDependencies": {
+    "ava": "^5.3.1",
+    "semantic-release": "^22.0.5",
+    "xo": "^0.56.0"
+  }
+}
