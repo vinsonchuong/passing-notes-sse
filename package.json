@@ -20,6 +20,10 @@
     "prettier": true,
     "space": 2,
     "semicolon": false,
+    "envs": [
+      "browser",
+      "node"
+    ],
     "rules": {
       "import/no-anonymous-default-export": "off"
     }

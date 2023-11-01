@@ -1,4 +1,3 @@
-import {ReadableStream} from 'node:stream/web'
 import {getHeader} from 'passing-notes'
 
 export const serialize = (next) => async (request) => {
