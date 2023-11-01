@@ -11,14 +11,16 @@ export const serialize = (next) => async (request) => {
           async start(controller) {
             for await (const event of response.body) {
               controller.enqueue(
-                Object.entries(event)
-                  .flatMap(([field, value]) =>
-                    field === 'data'
-                      ? value.split('\n').map((line) => [field, line])
-                      : [[field, value]],
-                  )
-                  .map(([field, value]) => `${field}: ${value}`)
-                  .join('\n') + '\n\n',
+                typeof event === 'string'
+                  ? event
+                  : Object.entries(event)
+                      .flatMap(([field, value]) =>
+                        field === 'data'
+                          ? value.split('\n').map((line) => [field, line])
+                          : [[field, value]],
+                      )
+                      .map(([field, value]) => `${field}: ${value}`)
+                      .join('\n') + '\n\n',
               )
             }
 
