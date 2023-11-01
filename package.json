@@ -2,7 +2,9 @@
   "name": "passing-notes-sse",
   "version": "0.0.0",
   "description": "A middleware for sending and receiving server-sent events",
-  "keywords": ["sse"],
+  "keywords": [
+    "sse"
+  ],
   "homepage": "https://github.com/vinsonchuong/passing-notes-sse",
   "bugs": "https://github.com/vinsonchuong/passing-notes-sse/issues",
   "license": "MIT",
@@ -36,10 +38,10 @@
   "packageManager": "yarn@4.0.0",
   "devDependencies": {
     "ava": "^5.3.1",
-    "semantic-release": "^22.0.5",
+    "semantic-release": "^22.0.6",
     "xo": "^0.56.0"
   },
   "dependencies": {
-    "passing-notes": "^6.8.0"
+    "passing-notes": "^6.8.1"
   }
 }

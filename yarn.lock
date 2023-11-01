@@ -5873,15 +5873,15 @@ __metadata:
   resolution: "passing-notes-sse@workspace:."
   dependencies:
     ava: "npm:^5.3.1"
-    passing-notes: "npm:^6.8.0"
-    semantic-release: "npm:^22.0.5"
+    passing-notes: "npm:^6.8.1"
+    semantic-release: "npm:^22.0.6"
     xo: "npm:^0.56.0"
   languageName: unknown
   linkType: soft
 
-"passing-notes@npm:^6.8.0":
-  version: 6.8.0
-  resolution: "passing-notes@npm:6.8.0"
+"passing-notes@npm:^6.8.1":
+  version: 6.8.1
+  resolution: "passing-notes@npm:6.8.1"
   dependencies:
     get-port: "npm:^7.0.0"
     get-stream: "npm:^6.0.1"
@@ -5897,7 +5897,7 @@ __metadata:
     type-is: "npm:^1.6.18"
   bin:
     pass-notes: bin.js
-  checksum: 652d11f158cd9189f47091e7b647ad5913fac573d584106a4e485c5340decd3de8b3fc3b744a9d6c9fe1350d4c1032e068abe7f94beec1806cb8e8efbeb4f821
+  checksum: 433afb58042f00180f4dc139baf8cc55e4a698f18f59b50df19d5c375fae2041ccb9c7191f0a030daa27d9d68f7d15884cf203dd9f1eb5a6da8d7802b3a55775
   languageName: node
   linkType: hard
 
@@ -6580,7 +6580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^22.0.5":
+"semantic-release@npm:^22.0.6":
   version: 22.0.6
   resolution: "semantic-release@npm:22.0.6"
   dependencies:
