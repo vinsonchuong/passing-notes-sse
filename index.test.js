@@ -12,7 +12,7 @@ import * as sse from './index.js'
 test('sending and receiving server-sent events', async (t) => {
   const server = await startServer(
     {port: 10_000},
-    compose(sse.serialize, () => (request) => ({
+    compose(sse.serialize, () => () => ({
       status: 200,
       headers: {
         'Content-Type': 'text/event-stream',
@@ -53,7 +53,7 @@ test('sending and receiving server-sent events', async (t) => {
 test('also supporting Node.js streams', async (t) => {
   const server = await startServer(
     {port: 10_001},
-    compose(sse.serialize, () => (request) => ({
+    compose(sse.serialize, () => () => ({
       status: 200,
       headers: {
         'Content-Type': 'text/event-stream',
