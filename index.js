@@ -44,7 +44,7 @@ export const deserialize = (next) => async (request) => {
 
               const matches = buffer.split('\n\n')
               if (matches.length === 1) {
-                return
+                continue
               }
 
               ;[buffer] = matches.splice(-1)
