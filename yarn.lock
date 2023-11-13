@@ -5899,13 +5899,13 @@ __metadata:
   resolution: "passing-notes-sse@workspace:."
   dependencies:
     ava: "npm:^5.3.1"
-    passing-notes: "npm:^6.8.1"
-    semantic-release: "npm:^22.0.6"
+    passing-notes: "npm:^6.8.3"
+    semantic-release: "npm:^22.0.7"
     xo: "npm:^0.56.0"
   languageName: unknown
   linkType: soft
 
-"passing-notes@npm:^6.8.1":
+"passing-notes@npm:^6.8.3":
   version: 6.8.3
   resolution: "passing-notes@npm:6.8.3"
   dependencies:
@@ -6629,7 +6629,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^22.0.6":
+"semantic-release@npm:^22.0.7":
   version: 22.0.7
   resolution: "semantic-release@npm:22.0.7"
   dependencies:

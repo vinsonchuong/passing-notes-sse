@@ -35,13 +35,13 @@
       "main"
     ]
   },
-  "packageManager": "yarn@4.0.0",
+  "packageManager": "yarn@4.0.1",
   "devDependencies": {
     "ava": "^5.3.1",
-    "semantic-release": "^22.0.6",
+    "semantic-release": "^22.0.7",
     "xo": "^0.56.0"
   },
   "dependencies": {
-    "passing-notes": "^6.8.1"
+    "passing-notes": "^6.8.3"
   }
 }
