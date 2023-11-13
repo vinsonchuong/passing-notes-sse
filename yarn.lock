@@ -5906,11 +5906,11 @@ __metadata:
   linkType: soft
 
 "passing-notes@npm:^6.8.1":
-  version: 6.8.2
-  resolution: "passing-notes@npm:6.8.2"
+  version: 6.8.3
+  resolution: "passing-notes@npm:6.8.3"
   dependencies:
     get-port: "npm:^7.0.0"
-    get-stream: "npm:^6.0.1"
+    get-stream: "npm:^8.0.1"
     heliograph: "npm:^7.0.0"
     hot-esm: "npm:^1.6.0"
     httpx-server: "npm:^1.4.4"
@@ -5923,7 +5923,7 @@ __metadata:
     type-is: "npm:^1.6.18"
   bin:
     pass-notes: bin.js
-  checksum: 933b423867ce2cc958702ffa015c6450a3073e38392a6479fa507bed05f3191b8bda34cc49161cb33cd2eb225f3b2c2f0d56b2f2d176620229a8c57416603b6b
+  checksum: 69a175c960bda698892ff0aa651652dddfc50375e1ba5cbdfd5d9910be39b61d4ffa1c2dbf3041a8132e32ef3a94b276963fa8981f12a7357c3ca3577babe5a1
   languageName: node
   linkType: hard
 
