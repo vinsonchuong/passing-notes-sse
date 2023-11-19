@@ -36,18 +36,21 @@ export const deserialize = (next) => async (request) => {
   return getHeader(response, 'Content-Type') === 'text/event-stream'
     ? {
         ...response,
-        body: new ReadableStream({
-          async start(controller) {
-            let buffer = ''
-            for await (const chunk of response.body) {
-              buffer += chunk
+        body: response.body.pipeThrough(new TextDecoderStream()).pipeThrough(
+          new TransformStream({
+            start() {
+              this.buffer = ''
+            },
 
-              const matches = buffer.split('\n\n')
+            transform(chunk, controller) {
+              this.buffer += chunk
+
+              const matches = this.buffer.split('\n\n')
               if (matches.length === 1) {
-                continue
+                return
               }
 
-              ;[buffer] = matches.splice(-1)
+              this.buffer = matches.splice(-1)[0]
 
               for (const match of matches) {
                 if (match.startsWith(':')) {
@@ -67,11 +70,9 @@ export const deserialize = (next) => async (request) => {
 
                 controller.enqueue(event)
               }
-            }
-
-            controller.close()
-          },
-        }),
+            },
+          }),
+        ),
       }
     : response
 }

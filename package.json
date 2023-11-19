@@ -35,13 +35,18 @@
       "main"
     ]
   },
-  "packageManager": "yarn@4.0.1",
+  "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "ava": "^5.3.1",
-    "semantic-release": "^22.0.7",
+    "ava-patterns": "^3.2.1",
+    "passing-notes-ui": "^1.3.5",
+    "puppet-strings": "^5.0.2",
+    "puppet-strings-chrome": "^2.0.4",
+    "puppet-strings-open-app": "^4.0.4",
+    "semantic-release": "^22.0.8",
     "xo": "^0.56.0"
   },
   "dependencies": {
-    "passing-notes": "^6.8.3"
+    "passing-notes": "^6.8.4"
   }
 }
