@@ -46,7 +46,7 @@
     "puppet-strings-chrome": "^2.0.4",
     "puppet-strings-open-app": "^4.0.4",
     "semantic-release": "^24.0.0",
-    "xo": "^0.58.0"
+    "xo": "^0.59.0"
   },
   "dependencies": {
     "passing-notes": "^6.8.4"
