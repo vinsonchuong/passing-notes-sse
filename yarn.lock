@@ -9318,8 +9318,8 @@ __metadata:
   linkType: hard
 
 "xo@npm:^0.59.2":
-  version: 0.59.2
-  resolution: "xo@npm:0.59.2"
+  version: 0.59.3
+  resolution: "xo@npm:0.59.3"
   dependencies:
     "@eslint/eslintrc": "npm:^3.1.0"
     "@typescript-eslint/eslint-plugin": "npm:^7.16.1"
@@ -9360,7 +9360,7 @@ __metadata:
     typescript: "npm:^5.5.3"
   bin:
     xo: cli.js
-  checksum: 3bb4ecbf9a2e314b14b2752f2fd1680096ca97ec142161bb391803f26b18b2a2606604afba4f045b4113b3ba0e4e0926552f49efbd57f652c708ff6e11c3d1d5
+  checksum: a45e2132ef7114f3a084cf2828b387973ddaf9300bb987a93ce1fcca0159dc4414ae32ebd0fe0788977adae2109d774df1571ba57e14a32369f0d6d4e5c387bc
   languageName: node
   linkType: hard
 
